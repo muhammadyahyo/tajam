@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/CircularStd-Bold.woff2') format('woff2'),
+        url('../fonts/CircularStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*{
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: 'Circular Std';
+	height: 100vh;
+}
+.container1{
+	width: 1140px;
+	margin: 0 auto;
+
+}
+.container{
+	width: 1050px;
+	margin: 0 auto;
+
+}
+header{
+	background-image: url("../img/Oval.svg");
+	background-repeat: no-repeat;
+	
+	background-position: 0 -150px;
+	min-height: 900px;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 30px;
+}
+.nav-list{
+	display: flex;
+	align-items: center;
+}
+nav h1{
+	text-transform: capitalize;
+}
+.nav-item{
+	margin-left: 50px;
+}
+.nav-item-link{
+	display: block;
+	text-transform: capitalize;
+	color: black;
+	font-weight: 500;
+}
+.nav-item-link:hover{
+	color: #5454D4;
+}
+.nav-active{
+	color: white;
+	background-color: #F04037;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+.nav-item-down{
+
+}
+.dropdown{
+	display: inline-block;
+	position: relative;
+}
+.dropdown-text{
+	padding: 3px 10px;
+	cursor: pointer;
+	transition: transform 5s;
+}
+.dropdown-list{
+	display: none;
+	border: 1px solid #F4F4F8;
+	border-top: 3px solid #5454D4;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: absolute;
+	width: 280px;
+	top: 100%;
+	z-index: 10;
+	background-color: #fff;
+}
+.dropdown:hover .dropdown-list{
+	display: block;
+}
+.dropdown-item{
+	padding: 15px 0;
+	padding-left: 20px;
+
+}
+.dropdown-text:hover{
+	color: #5454D4;
+}
+.dropdown-text:hover .dropdown-arow-icon{
+	transform: rotate(90deg);
+}
+.dropdown-link{
+	color: black;
+
+}
+.dropdown-link-active{
+	color: #5454D4;
+}
+.dropdown-arow-icon2{
+	margin-left: 80px;
+}
+
+.dropdown2{
+	display: inline-block;
+	position: relative;
+}
+.dropdown2-list{
+	display: block;
+	border: 1px solid #F4F4F8;
+	border-top: 3px solid #5454D4;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	position: absolute;
+	width: 280px;
+	right: 235px;
+	background-color: #fff;
+}
+.dropdown2:hover .dropdown2-list{
+	display: block;
+}
+.dropdown2-item{
+	padding: 15px 0;
+	padding-left: 20px;
+
+}
+.dropdown2-link{
+	color: black;
+
+}
+.header-center{
+	display: flex;
+	margin-top: 150px;
+	justify-content: space-between;
+	position: relative;
+}
+.header-center-left-h2{
+	width:400px;
+	font-size: 52px;
+}
+.header-center-left-p{
+	margin-top: 25px;
+	width: 500px;
+	line-height: 1.8;
+	color: #696871;
+	margin-bottom: 25px;
+}
+.header-center-left-link{
+	color: white;
+	background-color: #F04037;
+	padding: 15px 30px;
+	border-radius: 5px;
+
+}
+.header-center-left-div{
+	margin-top: 30px;
+}
+.header-center-left-div-link{
+	margin-left: 5px;
+}
+.header-center-img{
+	border-radius: 45px;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+}
+.header-center-content1{
+	position: absolute;
+	width: 320px;
+	height: 80px;
+	border-radius: 8px;
+	background-color: #FEDC5A;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	right: 0px;
+	bottom: 100px;
+}
+.header-center-content1 span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 31px;
+	height: 31px;
+	border-radius: 50%;
+	background-color: #5454D4;
+}
+.header-center-content1-p{
+	width: 230px;
+}
+.header-center-content2{
+	position: absolute;
+	width: 320px;
+	height: 60px;
+	border-radius: 8px;
+	background-color: #5454D4;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	right: 60px;
+	top: 50px;
+}
+.header-center-content2 span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 31px;
+	height: 31px;
+	border-radius: 50%;
+	background-color: #FEDC5A;
+}
+.header-sub-hr{
+	margin-top: 30px;
+}
+.header-sub-hr-p{
+	position: relative;
+	color: #696871;
+}
+.header-sub-hr-p::after{
+	  border-bottom: 1px solid #696871;
+}
+.companies{
+	margin: 30px 0;
+	width: 100%;
+}
+.section1{
+	position: relative;
+	height: 1000px;
+	background-image: url("../img/Rectangle 2.png");
+
+}
+.section-sub-img{
+	width: 100%;
+	position: absolute;
+	bottom: 100%;
+	fill: #fff;
+	bottom: -1px;
+
+}
